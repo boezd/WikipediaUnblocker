@@ -1,0 +1,19 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Wiki Engel Kaldir",
+  "description": "Wikipedianin engelini kaldirir",
+  "version": "1.4",
+  "manifest_version": 2,
+  "background": {"scripts":["background.js"]},
+  "icons": { "16": "w16.png",
+           "48": "w48.png",
+          "128": "w128.png" },
+  "permissions": [
+    "webRequest",
+    "*://wikipedia.org/*",
+    "*://www.wikipedia.org/*",
+	"*://*.wikipedia.org/*",
+    "webRequestBlocking"
+  ]
+}
